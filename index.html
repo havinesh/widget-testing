@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Chat widget testing</title>
+
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/clean_ai_bot.js"
+    ></script>
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/widget_logout.js"
+    ></script>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="BnQ2qF9E81yy9WZoDdN3HRm3-L4YsGFE9ZrXPZnsufPQo9rNOaVH4iXB0XaQeuaVrIuwexhDbfDn_vwXPXMnpg"
+        app_secret="Bsf1qIfxvSaPyUDA4TDwEjxqdYMTl7Ql_S8dwmHF7g1ZT0o1Zstgwq3CZLIIXGFxzFcvDBfq3rU8V7YxRZzN43ZzOdBEskfcTCKz8vgDg8wosMPPCmzJ0jNYgs9sc3Uhq5z6kutVI5a_hHzJUKnogSM78tNAldp6fcYk8HXgxDg"
+        access_by_id="22004593"
+        access_by_type="customer"
+      ></cleandesk-chat-widget>
+      
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
