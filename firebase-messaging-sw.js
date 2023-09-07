@@ -52,31 +52,45 @@ firebase.initializeApp({
   measurementId: "G-E8B856ZZTV",
 });
 
+const messaging = firebase.messaging();
 
-function requestPermission() {
-  console.log("Requesting permission...");
-  Notification.requestPermission().then((permission) => {
-    if (permission === "granted") {
-      console.log("Notification permission granted.");
-      const app = initializeApp(firebaseConfig);
+messaging.onBackgroundMessage(function (payload) {
+  // Customize notification here
+  const notificationTitle = 'CleanDesk';
+  const notificationOptions = {
+    body: 'Notification from CleanDesk.',
+    icon: '/favicon-96x96.png',
+  };
 
-      const messaging = firebase.messaging();
-      getToken(messaging, {
-        vapidKey:
-          // "BNIJU5asOcHqwqzU5cBdoWn5wo_hLe21SfTX_G0dIy-5-17-j059LwzId-KhV9KU6RtoE4to9P-vuWadJ4erdKg",
-          "BOWdlEHTiTXNl4ncjBd3URkD5cPtkoSDpLKmq1kTzmTFhU6zHo0gk22jti9_agP4IPGl49m3nNb5dIk1AezACZk",
-        // serviceWorkerRegistration,
-      }).then((currentToken) => {
-        if (currentToken) {
-          console.log("currentToken: ", currentToken);
-        } else {
-          console.log("Can not get token");
-        }
-      });
-    } else {
-      console.log("Do not have permission!");
-    }
-  });
-}
+  // eslint-disable-next-line no-restricted-globals
+  self.registration.showNotification(notificationTitle, notificationOptions);
+});
 
-requestPermission();
+
+// function requestPermission() {
+//   console.log("Requesting permission...");
+//   Notification.requestPermission().then((permission) => {
+//     if (permission === "granted") {
+//       console.log("Notification permission granted.");
+//       const app = initializeApp(firebaseConfig);
+
+//       const messaging = firebase.messaging();
+//       getToken(messaging, {
+//         vapidKey:
+//           // "BNIJU5asOcHqwqzU5cBdoWn5wo_hLe21SfTX_G0dIy-5-17-j059LwzId-KhV9KU6RtoE4to9P-vuWadJ4erdKg",
+//           "BOWdlEHTiTXNl4ncjBd3URkD5cPtkoSDpLKmq1kTzmTFhU6zHo0gk22jti9_agP4IPGl49m3nNb5dIk1AezACZk",
+//         // serviceWorkerRegistration,
+//       }).then((currentToken) => {
+//         if (currentToken) {
+//           console.log("currentToken: ", currentToken);
+//         } else {
+//           console.log("Can not get token");
+//         }
+//       });
+//     } else {
+//       console.log("Do not have permission!");
+//     }
+//   });
+// }
+
+// requestPermission();
