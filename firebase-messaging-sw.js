@@ -60,7 +60,7 @@ function requestPermission() {
       console.log("Notification permission granted.");
       const app = initializeApp(firebaseConfig);
 
-      const messaging = = firebase.messaging();
+      const messaging = firebase.messaging();
       getToken(messaging, {
         vapidKey:
           // "BNIJU5asOcHqwqzU5cBdoWn5wo_hLe21SfTX_G0dIy-5-17-j059LwzId-KhV9KU6RtoE4to9P-vuWadJ4erdKg",
