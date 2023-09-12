@@ -6,6 +6,12 @@
 
     <title>Chat widget testing</title>
 
+    <!-- <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/clean_ai_bot.js?ver<%=DateTime.Now.Ticks.ToString()%>"
+      type="text/javascript"
+    ></script> -->
+    <!--     <script defer src="https://testcdn.cleandesk.co.in/js/widget_logout.js"></script> -->
     <script>
       document.write(
         "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/js/clean_ai_bot.js?q=" +
@@ -13,7 +19,7 @@
           "'><\/script>"
       );
     </script>
-    <!--     <script defer src="https://testcdn.cleandesk.co.in/js/widget_logout.js"></script> -->
+
     <script defer src="./logout.js"></script>
 
     <style>
@@ -32,8 +38,6 @@
         access_by_id="2000237"
         access_by_type="customer"
       ></cleandesk-chat-widget>
-
-      <button onclick="CleandeskWidgetLogout()">click to logout</button>
     </div>
   </body>
 </html>
