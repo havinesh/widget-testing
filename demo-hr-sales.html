@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>DEMO HR widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script defer src="./logout.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="vCcRm8HkXxYx-YOkjJsiEprRIPKWyLSRyY3brixEQrllUYv6jzzotIQkx_UUwcu2FcdFqRDF5shFlwm8TGuu6Q"
+        app_secret="cSu0E-_GzCuEvMgyWD7gmJUy2kKdn2DoJSCf5no3QpCU90GDfsMf7Xo5BqlLBBHkEA3WoOe_OjSFkrPW6YC1N5rOcvgf5KHIBX3YvnspI3GlecBL8MehYgHgbTkyjXX1jrvktpvn0OvSfTeiIpITbBZ3Nc41v_NdCJO1cVESOdU"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
