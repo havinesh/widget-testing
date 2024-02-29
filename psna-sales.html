@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>PSNA widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script defer src="./logout.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="lFhqj-op28z3-NYUizGW17I97iQoW_UfCSD71lsoq4lXQ268CkJ0_uoEMTS28Q6qm752H0BBqS-tnh6h7bS_zA"
+        app_secret="J4c5q9xqNFYCPXXb1SxaatTwWiBNLTlUm2ovOKuRz9UiTiJPBIzM8rsYIuqGYVpffJneC0LRC6y0D_WFk8cUWl-7T3xk7PmZuvEnP8fNhj2RZpscnWnZZ_uCqGg-_a-G3tShIyJ9K_r2y3mF09lkYKxxAdyKg8_5w16Srl22clw"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
