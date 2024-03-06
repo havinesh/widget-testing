@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>DOMAIN Chat widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/widget_logout.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget />
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
