@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Gandhi widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/widget_logout.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="l78CVvprGdPKAPb8Ar-IgcfE3PcFQ_qqgG2Hk8jiKcP-Y8poWvEoPVZkNvGkjJK3EMRp_c3MupiwDvuyYh9ZBQ"
+        app_secret="x_Jka39wiLaauZ0dVycSlKEzUMQ9zxEvZLv-WXA63VATDzBfRodQrh5kOJX0CETJxpLB2CmHzagtE28khZy83Y9pVoxjGI1TJ_m07E57paWAZ3dY177wmid7Fw0ug_32AD89YeV6372W6r-hUzAY5TnnK78y2JVW7Epx9LtLaUM"
+        access_by_id=""
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
