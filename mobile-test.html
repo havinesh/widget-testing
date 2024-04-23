@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Chat widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/js/test/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <!--     <script defer src="https://testcdn.cleandesk.co.in/js/widget_logout.js"></script> -->
+    <script defer src="./logout.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="BnQ2qF9E81yy9WZoDdN3HRm3-L4YsGFE9ZrXPZnsufPQo9rNOaVH4iXB0XaQeuaVrIuwexhDbfDn_vwXPXMnpg"
+        app_secret="dS-kW8Qd-NjwU6DkGBJ0x6ica96ov4EJ4Hebs0_d5uc9qBCXgJC1I4FWB-KMvpDGIqm5wVzZPOZKx-Iso8qmg4fGBpMe-QS2L0VWGSDwX8iFWD2WXk0fqjGe2nJVpphW2IXxfWYHJ84toWD-8t1eRmoM7rjjd-Bn1Q2bsF1CJLY"
+        access_by_id="2000237"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
