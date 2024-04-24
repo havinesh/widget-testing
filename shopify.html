@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Sukham support widget</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/js/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/widget_logout.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="mPUReClLKbMHQvjmX4WyDKJWKf6qnXiVdY-gdUiD6JulOehPMvX_mE_RIF3jYZ37xJi1uSoUIeXzagUde6uD1g"
+        app_secret="JrUk5_wyilrOprsn5Ojqne-P-RuDLV0Iw4pdwIbAV6Mh-Rt0Y1JucSHm_cTeyCRmCLF_8pZezw0U2CwRg5kGmSFT8Zt5qVtWb2u4qh-QI5reSqVkLGM71efgvKCvIABsdu3tlboa_Syc8gM8EnnOLcspKzHbOsqjrSTAIgRBYX4"
+        access_by_id="7697927995714"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
