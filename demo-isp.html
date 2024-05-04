@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Demo isp widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script
+      defer
+      src="https://testcdn.cleandesk.co.in/js/widget_logout.js"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="4i1mSgSCtGWELHTBiNvoKcpL6bPBdeChaMJMxBsUrhC__DpqwbVnn0aNTkw3Pc6bU38b3jtmwq6LIWDMaLkyew"
+        app_secret="KBbBgkJ_4Z-qECPMSd1vQ-hheIdN3XgEbSur9-Q38SKjs5_eCn1UN0WJDuzfFtaKGjBhkNvGC_CCXzSG6DxzzIsyjPdXeD5lqd4e9Q1LjTzWel8RGO8Ug3SOmtTu8bJMwKiGvnWtcxlhA1HRJlUICLm3F7VlHuBaRNxlqeLCVSA"
+        access_by_id="2000237"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
