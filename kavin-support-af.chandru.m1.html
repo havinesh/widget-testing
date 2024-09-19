@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Kavin support widget testing</title>
+
+    <script>
+      document.write(
+        "<script type='text/javascript' src='https://testcdn.cleandesk.co.in/public/build/clean_ai_bot.js?q=" +
+          Date.now() +
+          "'><\/script>"
+      );
+    </script>
+    <script defer src="./logout.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <cleandesk-chat-widget
+        app_id="UkUCMpv7ASbeDc4vS1VD9JxGhmJEzw7tdKo2qgOQzOS5mTBoISm1zk5xvFj-3IDPpAxIyx8ZYxBFKaw45PzmZA"
+        app_secret="_qlTnvkJgXNUTMDl26zuhCadlksobkqnATVt7wyaInG4H8hag6rxU-S_6KzicDTI9gfi8HuvpHIDh7FoH3N-3Pe7aSU5MLYbPscbJHXM7nlm6_Go7fsxJGux3kZD6H4zogs7c3PsSAKgArZFPtBKYnOCl0E2MEwMIDbcOLI81Oc"
+        access_by_id="af.chandru.m1"
+      ></cleandesk-chat-widget>
+
+      <button onclick="CleandeskWidgetLogout()">click to logout</button>
+    </div>
+  </body>
+</html>
